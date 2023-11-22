@@ -6,6 +6,7 @@ export default function (app: FastifyInstance, _opts: FastifyServerOptions, done
   app.get('/', healthCheck.get);
   app.get('/:model/:id', models.find);
   app.get('/:model', models.list);
+  app.post('/:model', models.create);
 
   done();
 }
