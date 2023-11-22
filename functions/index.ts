@@ -9,6 +9,7 @@ export default function (app: FastifyInstance, _opts: FastifyServerOptions, done
   app.get('/:model/:id', models.find);
   app.get('/:model', models.list);
   app.post('/:model', models.create);
+  app.put('/:model/:id', models.update);
 
   done();
 }
