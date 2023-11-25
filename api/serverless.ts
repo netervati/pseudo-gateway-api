@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv';
 import Fastify, { type FastifyRequest, type FastifyReply } from 'fastify';
 import cors from '@fastify/cors';
-import registerFunctions from '../functions/index';
+import registerFunctions from '../functions';
 
 dotenv.config();
 
